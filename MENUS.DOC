@@ -1,0 +1,766 @@
+main
+X-Wing Cheat Utility
+1
+15
+10
+UserPosition
+25
+9
+AutoSize
+7
+Load a pilot (*.PLT file)
+15
+Enabled
+Edit pilot
+15
+Disabled
+Pilot Log
+15
+Disabled
+Save pilot
+15
+Disabled
+Utilities...
+15
+Enabled
+About X-wing Cheat Utility
+15
+Enabled
+Quit X-wing Cheat Utility
+15
+Enabled
+pilotstatus
+Pilot Characteritics
+1
+15
+10
+Centre
+AutoSize
+5
+Status (Alive,Captured,Killed)
+15
+Enabled
+Rank (Flight Cadet...General)
+15
+Enabled
+Medals & Decorations
+15
+Enabled
+Historic Missions Experience
+15
+Enabled
+Tour of Duty Points
+15
+Enabled
+edit
+Choose a section to edit
+1
+15
+10
+Centre
+AutoSize
+4
+Pilot Characteristics
+15
+Enabled
+Proving Grounds
+15
+Enabled
+Historic Missions
+15
+Enabled
+Tour of Duty
+15
+Enabled
+crafts
+Choose a craft...
+1
+15
+10
+Centre
+AutoSize
+4
+X-wing (you know, the one of Luke Skywalker...)
+15
+Enabled
+Y-wing (a powerful flying stewpan)
+15
+Enabled
+A-wing (a speedy little flea throwing concussion missiles)
+15
+Enabled
+B-wing (a powerful flying fortress...)
+15
+Disabled
+historicmenu
+Choose...
+1
+15
+10
+Centre
+AutoSize
+2
+Set mission to 'Completed'
+15
+Enabled
+Change mission's score...
+15
+Enabled
+pgroundmenu
+Choose...
+1
+15
+10
+Centre
+AutoSize
+2
+Set the level reached...
+15
+Enabled
+Change high score
+15
+Enabled
+Tour I
+Tour of Duty I Missions
+1
+15
+10
+Centre
+AutoSize
+13
+OP  1 : Destroy Imperial Convoy
+15
+Enabled
+OP  2 : ID-Reconnaissance Mission
+15
+Enabled
+OP  3 : Fly Point During Evacuation
+15
+Enabled
+OP  4 : Protect Medical Fregate
+15
+Enabled
+OP  5 : Ambush Imperial Supply Convoy
+15
+Enabled
+OP  6 : Raid for R2 Units
+15
+Enabled
+OP  7 : Recover Stolen X-wings
+15
+Enabled
+OP  8 : Rescue Sullustan Tech Staff
+15
+Enabled
+OP  9 : Diplomatic Summit with Sullust
+15
+Enabled
+OP 10 : Rescue Sullustan Leader
+15
+Enabled
+OP 11 : Capture Staff from Cygnus
+15
+Enabled
+OP 12 : Recover Explosive Warhead
+15
+Enabled
+Tour I has been completed : congratulations !!
+15
+Enabled
+Tour II
+Tour of Duty II Missions
+1
+15
+10
+Centre
+AutoSize
+13
+OP  1 : Rescue from Star's End
+15
+Enabled
+OP  2 : Rescue Wookie Slaves
+15
+Enabled
+OP  3 : Attack Weapons Convoy
+15
+Enabled
+OP  4 : Capture Stolen Freighter
+15
+Enabled
+OP  5 : Protect Captured Satellites
+15
+Enabled
+OP  6 : Rendez-vous in the Cron Drift
+15
+Enabled
+OP  7 : Protect a Disabled X-wing
+15
+Enabled
+OP  8 : Stop HyperDrive Replacement
+15
+Enabled
+OP  9 : Take Out Intrepid's Escort
+15
+Enabled
+OP 10 : Destroy the Intreprid
+15
+Enabled
+OP 11 : Deliver Plans to Princess Leia
+15
+Enabled
+OP 12 : Protect Princess Leia
+15
+Enabled
+Tour II has been completed : congratulations !!!
+15
+Enabled
+Tour III
+Tour of Duty III Missions
+1
+15
+10
+Centre
+AutoSize
+15
+OP  1 : Guard Military Equipment Transfert
+15
+Enabled
+OP  2 : Destroy Imperial Repair Dock
+15
+Enabled
+OP  3 : Capture Military Transport
+15
+Enabled
+OP  4 : Scramble !!
+15
+Enabled
+OP  5 : Intercept & Capture
+15
+Enabled
+OP  6 : Destroy Imperial Supply Base
+15
+Enabled
+OP  7 : Destroy Priam's Escort
+15
+Enabled
+OP  8 : Capture the Frigate Priam
+15
+Enabled
+OP  9 : Capture Ethar I and II
+15
+Enabled
+OP 10 : Guard Vital Supply Depot
+15
+Enabled
+OP 11 : Defend Cruiser Independence
+15
+Enabled
+OP 12 : Begin Death Star Assault
+15
+Enabled
+OP 13 : Attack Death Star Surface
+15
+Enabled
+OP 14 : Death Star Trench Run
+15
+Enabled
+Tour III has been completed : congratulations
+15
+Enabled
+Tour IV
+Imperial Pursuit
+1
+15
+10
+Centre
+AutoSize
+25
+OP  1 : Evacuate Yavin
+15
+Enabled
+OP  2 : Provide Area Protection
+15
+Enabled
+OP  3 : Evacuate Cruiser Maximus
+15
+Enabled
+OP  4 : Protect Frigate Anvil
+15
+Enabled
+OP  5 : Abandon Ship
+15
+Enabled
+OP 6a : Guard Repair Operations
+15
+Enabled
+OP 6b : Protect Supply Container
+15
+Enabled
+OP  7 : Hide & Seek
+15
+Enabled
+OP 8a : Clear Mine Field
+15
+Enabled
+OP 8b : Destroy Comm Area
+15
+Enabled
+OP  9 : Guard Cargo Transfert
+15
+Enabled
+OP 10 : Grain Snatch
+15
+Enabled
+OP 11 : Capture Gorin's Y-wings
+15
+Enabled
+OP 12a: Raid Storage Area
+15
+Enabled
+OP 12b: Corvette Alley
+15
+Enabled
+OP 13 : Grain Exchange
+15
+Enabled
+OP 14 : Confirm Grain Delivery
+15
+Enabled
+OP 15 : Steal TIE Advanced
+15
+Enabled
+OP 16a: Escort Base Convoy
+15
+Enabled
+OP 16b: Support Allies
+15
+Enabled
+OP 17 : Attack Frigate Red Wind
+15
+Enabled
+OP 18 : Capture Imperial Gunboats
+15
+Enabled
+OP 19 : Capture Imperial Corvette
+15
+Enabled
+OP 20 : Defend Ram's Head
+15
+Enabled
+Tour IV has been completed : congratulations !!!
+15
+Enabled
+Tour V
+B-wing
+1
+15
+10
+Centre
+AutoSize
+25
+OP  1 : Protect B-wing Assembly Area
+15
+Enabled
+OP  2 : Cover B-wing Evacuation
+15
+Enabled
+OP  3 : Protect B-wing Delivery
+15
+Enabled
+OP  4 : Destroy TIE Staging Area
+15
+Enabled
+OP  5 : Destroy Secret Weapons Base
+15
+Enabled
+OP  6 : Prisoner Rescue
+15
+Enabled
+OP  7 : Help Neutrals Out Of Ambush
+15
+Enabled
+OP  8 : Escort VIP to Alliance Cruiser
+15
+Enabled
+OP  9 : Guard Cargo Pickup
+15
+Enabled
+OP 10 : Probe Capture
+15
+Enabled
+OP 11a: Destroy Corvette Base
+15
+Enabled
+OP 11b: Destroy Imperial Base
+15
+Enabled
+OP 12 : Intercept Imperial Attack
+15
+Enabled
+OP 13 : Protect B-wing Delivery
+15
+Enabled
+OP 14a: Capture Imperial Fregate
+15
+Enabled
+OP 14b: Capture Imperial Officers
+15
+Enabled
+OP 15 : Escort B-wings on Attack
+15
+Enabled
+OP 16 : Attack Probe Calibration Site
+15
+Enabled
+OP 17a: Ambush Imperial Arms Shipment
+15
+Enabled
+OP 17b: Disrupt Delivery of New TIEs
+15
+Enabled
+OP 18 : Destroy the Relentless
+15
+Enabled
+OP 19 : Operation "Blunt Stick"
+15
+Enabled
+OP 20a: Save the Cruiser Cathleen
+15
+Enabled
+OP 20b: Escape to Hoth
+15
+Enabled
+Tour V has been completed : congratulations !!!
+15
+Enabled
+statistics
+Choose...
+1
+15
+10
+Centre
+AutoSize
+8
+TOD Surface Victories
+15
+Enabled
+TOD Laser Fired
+15
+Enabled
+TOD Laser Crafts Hits
+15
+Enabled
+TOD Laser Ground Hits
+15
+Enabled
+TOD Homing Projectiles Fired
+15
+Enabled
+TOD Homing Projectiles Crafts Hits
+15
+Enabled
+TOD Homing Projectiles Ground Hits
+15
+Enabled
+TOD Crafts Lost
+15
+Enabled
+xwingmissions
+X-wing Historic Missions
+1
+15
+10
+Centre
+AutoSize
+6
+Mission 1 : Dev's Sidestep
+15
+Enabled
+Mission 2 : Wingmen are Important
+15
+Enabled
+Mission 3 : Satellites Near Coruscant
+15
+Enabled
+Mission 4 : Beat the Odds
+15
+Enabled
+Mission 5 : Rescue at Mon Calamari
+15
+Enabled
+Mission 6 : Farlander's First Mission
+15
+Enabled
+ywingmissions
+Y-wing Historic Missions
+1
+15
+10
+Centre
+AutoSize
+6
+Mission 1 : Commerce Raid
+15
+Enabled
+Mission 2 : Y-wing Gunnery Practice
+15
+Enabled
+Mission 3 : S.O.S. from Corvette Karinne
+15
+Enabled
+Mission 4 : Prisoners from Kessel
+15
+Enabled
+Mission 5 : Escape from Mytus VII
+15
+Enabled
+Mission 6 : Interception and Capture
+15
+Enabled
+awingmissions
+A-wing Historic Missions
+1
+15
+10
+Centre
+AutoSize
+6
+Mission 1 : Repair Depot Raid
+15
+Enabled
+Mission 2 : Agressor Squadron Training
+15
+Enabled
+Mission 3 : Intercept TIE Bombers Run
+15
+Enabled
+Mission 4 : Attack Run on Freighters
+15
+Enabled
+Mission 5 : Protect Rebel Starfighters
+15
+Enabled
+Mission 6 : Deep Space Reconnaissance
+15
+Enabled
+bwingmissions
+B-wing Historic Missions
+1
+15
+10
+Centre
+AutoSize
+6
+Mission 1 : Protect Shantipole
+15
+Enabled
+Mission 2 : Assault on Imperial Convoy
+15
+Enabled
+Mission 3 : Capture the Frigate Priam
+15
+Enabled
+Mission 4 : B-wing Attack on the Shrike
+15
+Enabled
+Mission 5 : Attack Death Star Surface
+15
+Enabled
+Mission 6 : Death Star Trench Run
+15
+Enabled
+kindofrank
+Pilot Rank
+1
+15
+10
+Centre
+AutoSize
+6
+Flight Cadet (Oh ! Mum, I'm afraid of those TIE Fighters !)
+15
+Enabled
+Flight Officer (I shot a few of those bloody TIEs !)
+15
+Enabled
+Lieutenant (Shot that Imperial Corvette near Turkana)
+15
+Enabled
+Captain (That Fregate did not last for long !)
+15
+Enabled
+Commander (I finally destroyed that Star Destroyer !!)
+15
+Enabled
+General (Wanna be an Admiral and capture the Death Star !)
+15
+Enabled
+pilotlevels
+Choose the level you reached...
+1
+15
+10
+Centre
+AutoSize
+9
+Level 0 : Are you afraid of space ?
+15
+Enabled
+Level 1 : Do you know what a Starfighter is ?
+15
+Enabled
+Level 2 : For sure, you know how to fly !
+15
+Enabled
+Level 3 : Perhaps, one day, you'll fight the Empire !
+15
+Enabled
+Level 4 : Not so bad ! You would survive a TIE Fighters run !
+15
+Enabled
+Level 5 : Your skill will drive the poor TIEs crazy, for sure !
+15
+Enabled
+Level 6 : Have you ever fought an Imperial Fregate ?
+15
+Enabled
+Level 7 : I'm sure you know how to destroy a Star Destroyer, hum ??
+15
+Enabled
+Level 8 : Congratulations... You got the badge ! :-D
+15
+Enabled
+pilotsmenu
+Choose a pilot...
+1
+15
+10
+Centre
+AutoSize
+0
+medals
+Choose an item...
+1
+15
+10
+Centre
+AutoSize
+6
+The Kalidor Crescent
+15
+Enabled
+The Corellian Cross
+15
+Enabled
+The Mantooine Medallion
+15
+Enabled
+The Star of Alderaan
+15
+Enabled
+The Yavin Shield
+15
+Enabled
+The Talons of Hoth
+15
+Enabled
+kalidor
+Kalidor Crescent Menu
+1
+15
+10
+Centre
+AutoSize
+7
+None
+15
+Enabled
+Kalidor Crescent only
+15
+Enabled
+KC + Bronze Cluster
+15
+Enabled
+KC+BC + Silver Talons
+15
+Enabled
+KC+BC+ST + Silver Scimitar
+15
+Enabled
+KC+BC+ST+SC + Golden Wings
+15
+Enabled
+KC+BC+ST+SC+GW + Diamond Eyes
+15
+Enabled
+todmenu
+TOD Menu
+1
+15
+10
+Centre
+AutoSize
+4
+Play Operation...
+15
+Enabled
+Change Scores...
+15
+Enabled
+TOD Victories
+15
+Enabled
+TOD Statistics
+15
+Enabled
+tours
+Choose a Tour...
+1
+15
+10
+Centre
+AutoSize
+5
+Tour I   : A New Ally !
+15
+Enabled
+Tour II  : The Great Search
+15
+Enabled
+Tour III : The Gathering Storm
+15
+Enabled
+Tour IV  : Imperial Pursuit
+15
+Disabled
+Tour V   : B-wing
+15
+Disabled
+kindofstatus
+Different Status
+1
+15
+10
+Centre
+AutoSize
+3
+Alive (oh yes !!)
+15
+Enabled
+Captured (fucking Empire !!)
+15
+Enabled
+Killed (please, revive him !!)
+15
+Enabled
+utilities
+Utilities...
+1
+15
+10
+Centre
+AutoSize
+1
+Revive all X-wing pilots...
+15
+Enabled

@@ -1,0 +1,64 @@
+Pilot
+Pilot in memory
+1
+2
+38
+6
+4
+InfoWindowDef
+Score1
+
+10
+20
+65
+23
+4
+StandardWindowDef
+Score2
+
+10
+12
+70
+14
+4
+InfoWindowDef
+About
+About X-Wing Cheat Utility... by Damien MORCELLET @1994
+1
+2
+80
+24
+1
+StandardWindowDef
+AskNumber
+Enter a number...
+50
+3
+75
+5
+1
+StandardWindowDef
+AskSave
+Beware !!!
+10
+10
+65
+12
+1
+StandardWindowDef
+Kills
+TOD Victories : Destroyed / Captured Crafts
+10
+2
+70
+24
+1
+StandardWindowDef
+PilotLog
+Pilot Log...
+2
+2
+79
+24
+1
+StandardWindowDef

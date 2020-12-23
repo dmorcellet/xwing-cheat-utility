@@ -1,0 +1,182 @@
+X-Wing Cheat Utility (XWCU) by Damien MORCELLET v2.0
+
+This text file explains how the information about your X-wing pilots are
+stored in the .PLT file in the XWING directory...
+Some items were very easy to find (for example, where are stored the different
+scores), some other were not at all. Especially to find how X-wing knows what
+operation the pilot has completed in the Tour of Duty.
+
+Warning !! If you do not know what a byte is, or how to use hexa, skip
+that file, and just use XWCU to revive your pilots...
+
+I hope the others will find a little interest in having a look at this file.
+For sure, hackers gonna be happy !!
+
+Struture of the .PLT file :
+
+The X-wing .PLT files are 1706 bytes long...
+That's where you pilot rest between missions...
+There's a lot of free bytes in that f... .PLT so that lots of tours and
+historic missions may be added, without changing the file's length !
+
+Now, let's go inside the bytes....
+
+(Offset = Content & Meaning)
+$02 = The pilot's status. $00 means 'alive', ready to fly missions...
+                          $01 means 'captured' by the Empire
+                          $02 means 'killed' during Tour of Duty
+
+$03 = The pilot's rank.   $00 is Flight Cadet, $01 is Flight Officer 
+                          $02 is Lieutenant, $03 is Captain
+                          $04 is Commander, $05 is General
+
+$04-$07 = TOD points (shown in Pilot Log : 'Alive with ... TOD points'
+        Lower bytes come first...
+
+$08-$09 = Historic missions points...
+          0-16383 : Rookie, 16384-32767 : Officer, 32768-49151 : Veteran
+          49152-65534 : Ace, 65535 : Top Ace (yeah !)
+
+$0A = $01 if you got the Corellian Cross, and $00 else.
+$0B = $01 if you got the Mantooine Medallion
+$0C = $01 if you got the Star of Alderaan
+$0D = $01 if you got the Shield of Yavin (in Imperial Pursuit)
+$05 = $01 if you got the Talons of Hoth (at the end of B-wing)
+
+$11 = Kalidor Crescent
+        $00 = None (you're not brave enough to wear it)
+        $01 = Kalidor Crescent only
+        $02 = a Bronze Cluster is added to the Kalior Crescent
+        $03 = Adds Silver Talons
+        $04 = Adds Silver Scimitar
+        $05 = Adds Golden Wings
+        $06 = Adds Diamond Eyes 
+      
+$26-$29 = X-wing proving ground high score
+$2A-$2D = id for Y-wing
+$2E-$31 = id for A-wing
+$32-$35 = id for B-wing
+
+$86-$89 = Stores the level you reached in the proving grounds
+          (0= no level,1..8) respectively for X-wing,Y-wing,A-wing,B-wing 
+          (one byte for each craft)
+
+$9E-9F = sometimes, those bytes are not $00, but I don't know what they mean.
+
+$A0-DF = 64 bytes where the X-wing historic missions scores are stored.
+         4 bytes for each mission... 6 missions ! Hey.. 6*4=24, isn't ??
+         You guess, that means there may be 16 missions for a single craft !
+$E0-$11F = id for Y-wing...
+$120-$15F = id for A-wing...
+$160-$19F = id for B-wing
+$160-$21F = Empty spaces for 2 other crafts...
+
+$220-$27F = Used to know if a mission has been completed or not...
+A $00 means the mission has NOT been completed, and guess what a $01 means !
+   $220-$22F : 6 bytes for the X-wing missions of the basic game, and then
+               10 empty bytes for future missions ?
+   $230-$23F : For Y-wing ; $240-$24F : For A-wing ; $250-$25F : For B-wing
+   $260-$27F : Empty spaces for 16*2=48 missions and 2 other crafts...
+
+$280 indicates the current Tour of Duty...
+     $00 = Tour I (A new ally)
+     $01 = Tour II (The Great Search)
+     $02 = Tour III (The Gathering Storm)
+     $03 = Tour IV (Imperial Pursuit)
+     $04 = Tour V (B-wing)
+
+$281 is a byte that counts the times you went in the current TOD mission
+     without any success... What is the interest ?
+
+$282,$283 should have the same value, which is the number of the current
+mission in the current Tour of Duty, minus 1. So that Operation 1 = $00
+for example...
+$287 contains the operation you have to play now... (Op 1 = $00 ...)
+     In Imperial Pursuit : Op 6a=$05, Op 6b=$06, Op 7=$07, Op 8a=$08
+$288 is $FF is there is not two operations available at the same time
+     contains the code for the second operation is there is one...
+     for example if you play Op 6b of Imperial Pursuit :
+     $287=$05, $288=$06
+
+$2E0-$2E7 = One byte for each Tour... and then $00 for future Tours
+      a $00 means : this tour has never been selected
+      a $01 means : this tour is active
+      a $02 means : this tour is incomplete (you already tried it, but you
+                    gave up for another one...)
+      a $03 means : this tour has been completed... Congratulations !!!
+For example, $00-$02-$01-$00-$00 means that you tried Tour II (and you
+completed some missions, maybe, and then you selected Tour III, which is now 
+'Active').
+
+$2E8-$2EF = Indicates which of the Tour of Duty Operations are available for
+Historic Missions training... One byte for each Tour... and $FF for the others
+        $FF means that no missions are available for the Tour.
+        Else, the missions are all available until Operation nø (value+1)
+For example, $2E8-$2EF = 07 FF 00 FF FF FF FF FF means that Operations 1 to 8
+of Tour I can be played as an Historic Mission. As well as Operation 1 of
+Tour III. Following $FF are for future tours (I hope so !).
+
+$2F0-$2F7 = The three first bytes are respectively for Tour I,II,III and the
+others are for future tours... Their value is the number of the last
+successful operation in the Tour ($00 means:no operation have been completed)
+For example 09 00 01 means you have completed Operations 1 to 9 in Tour I, no
+operation in Tour II, and Operation 1 of Tour III.
+
+You know, I'm sure you guessed that there is enough space for 8 different
+tours ! So, I'm waiting for 3 other tours to come ! 
+
+$2F8-$35B = 25 * 4 bytes to store the scores of the 12 operations in Tour I.
+            Of course, only the 12*4=24 first bytes have a meaning...
+$35C-$3BF = The same for the 12 operations of Tour II
+$3C0-$413 = The same for the 14 operations of Tour III...
+$414-$477 = The same for the 24 operations of Tour IV
+$478-$4DB = The same for the 24 operations of Tour V
+
+Then follows lots of empty bytes to store the scores for future tours...
+
+$630-$633 = Tour of Duty Crafts Destroyed (computed by X-wing...)
+$634-$635 = Tour Of Duty Surface Victories
+
+$636-$695 = In that area are stored the number of crafts you've destroyed or
+            captured... Lower bytes come always first...
+( Craft ; Offset for destroyed crafts ; Offset for captured crafts )
+        X-wing :              $636-37 ; $666-67
+        Y-wing :              $638-39 ; $668-69
+        A-wing :              $63A-3B ; $66A-6B
+        TIE Fighter :         $63C-3D ; $66C-6D
+        TIE Interceptor :     $63E-3F ; $66E-6F
+        TIE Bomber :          $640-41 ; $670-71
+        Assault Gunboat :     $642-43 ; $672-73
+        Transport :           $644-45 ; $674-75
+        Shuttle :             $646-47 ; $676-77
+        Tug :                 $648-49 ; $678-79 
+        Container :           $64A-4B ; $67A-7B 
+        Freighter :           $64C-4D ; $67C-7D
+        Calamari Cruiser :    $64E-4F ; $67E-7F
+        Nebulon B Frigate :   $650-51 ; $680-81
+        Corellian Corvette :  $652-53 ; $682-83 
+        Star Destroyer :      $654-55 ; $684-85
+        TIE Advanced :        $656-57 ; $686-87 
+        B-wing                $658-59 ; $688-89  
+        No craft :            $65A-5D ; $68A-8D
+                (those 2 words are added to Mines)
+        Mines :               $65E-5F ; $68E-8F
+        No craft :            $660-61 ; $690-91
+                (this word is added to Communication Satellites)
+        Comm. Satellites :    $662-63 ; $692-93
+        Space Probe :         $664-65 ; $694-95
+
+Note : There's a bug in B-wing. That is, if you destroy a B-wing, it will be
+       counted as if you'd destroyed a Mine...
+       XWCU let's you see how many B-wing you killed (see Pilot Log...)
+
+$696-$699 = Tour of Duty Laser Fired
+$69A-$69D = Tour of Duty Laser Craft Hits (yeah !)
+$69E-$6A1 = Tour of Duty Laser Ground Hits
+$6A2-$6A3 = Tour of Duty Homing Projectiles Fired 
+$6A4-$6A5 = Tour of Duty Homing Projectiles Craft Hits (yeah !)
+$6A6-$6A7 = Tour of Duty Homing Projectiles Ground Hits
+
+$6A8-$6A9 = Tour of Duty crafts lost (bouh !)
+
+That's all folks...

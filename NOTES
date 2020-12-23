@@ -1,0 +1,62 @@
+XWCU v2.0 : Installation, Comments ...
+
+WHAT IS XWCU v2.0 ??
+--------------------
+First, XWCU means X-Wing Cheat Utility
+It simply allows you to edit your X-Wing pilots but :
+
+        You can edit EVERYTHING in the .PLT file
+        You can ENJOY a GREAT menus/windows interface
+
+How to use XWCU ???
+-------------------
+- Make a directory on your hard drive (XWCU for example)
+- This directory must contain XWCU essential files :
+        - XCWU.EXE ( of course :-D )
+        - XWCU.DOC ( text shown by the menu item 'about XWCU' )
+        - MENUS.DOC ( menus description file )
+        - WINDOWS.DOC (windows description file )
+        - XWCU.CFG ( configuration file )
+        - T.FNT ( the text font )
+
+- Before you run XWCU you MUST configure it : edit XWCU.CFG and give the
+  path for your X-wing program.
+  ex : XWINGPATH=c:\games\xwing
+
+- To run XWCU, you MUST be in its directory !
+
+- That's all folks...
+
+Other NOTES
+-----------
+- PILOTSAV.TXT is a file which describes the .PLT file structure. Enjoy it if
+  you're a true hacker...
+
+- This version of XWCU works with X-wing,B-wing and Imperial Pursuit.
+  You can use it with X-wing only, or with only one other module
+
+- You can tell me everything you want (about this program for example)
+  using eMail :
+        MORCELLE_DAM@LSI.SUPELEC.FR
+
+- Last, but not least ... XWCU is postcard-ware (that is, if you choose to
+  use XWCU regularly, I would like you to send me a postcard from where you
+  are... (except if it bothers you !!! :-D ).
+
+  Please write to : Damien MORCELLET
+                    SUPELEC - Plateau du Moulon
+                    91192 GIF sur YVETTE
+
+- If you don't like postcards, just send ASCII-art eMail...
+
+- New versions will be posted at the same place when available...
+
+GGGGGrrrrrrr.... (((( BBBBB UUUUUU GGGGG ))))
+---------------------------------------------
+While developing XWCU, I found an awful bug in B-WING !!
+When you destroy a B-Wing during a Tour of Duty mission, it does not appear
+in the Battle Victories... And more, whenever you destroy a B-Wing, it is 
+counted as a ... mine !
+
+BUT, using XWCU, you can see the number of B-Wing you destroyed ... 
+(just see Pilot Log)
